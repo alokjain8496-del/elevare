@@ -16432,6 +16432,13 @@ textarea.form-control-lg {
 .header.fixed-header .toggle-menu .menu-icon {
   color: var(--bs-white) !important;
 }
+.header .logo a {
+  display: block;
+}
+.header .logo img {
+  max-width: 170px;
+  height: auto;
+}
 .header .logo .logo-dark {
   display: none;
 }

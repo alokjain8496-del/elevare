@@ -36,6 +36,15 @@
     }
 
     .logo {
+        a {
+            display: block;
+        }
+
+        img {
+            max-width: 170px;
+            height: auto;
+        }
+
         .logo-dark {
             display: none;
         }
