@@ -16790,3 +16790,18 @@ ul {
   color: var(--bs-dark);
   background-color: var(--bs-white);
 }/*# sourceMappingURL=styles.css.map */
+:root {
+  --bs-primary: #CBA35C;
+  --bs-primary-rgb: 203, 163, 92;
+  --bs-dark: #0F172A;
+  --bs-dark-rgb: 15, 23, 42;
+}
+
+body { letter-spacing: 0.01em; }
+.header { backdrop-filter: blur(8px); background: rgba(15, 23, 42, 0.88); }
+.letter-spacing { letter-spacing: .12em; }
+.elevare-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,.88) 0%, rgba(15,23,42,.45) 60%, rgba(15,23,42,.2) 100%); z-index: 0; }
+.elevare-service-card { border: 1px solid rgba(15,23,42,.08); border-radius: 16px; transition: transform .3s ease, box-shadow .3s ease; }
+.elevare-service-card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(15,23,42,.12); }
+.elevare-cta { background: #0F172A; }
+.btn-outline-light:hover { background: #CBA35C; border-color: #CBA35C !important; color: #0F172A !important; }
