@@ -16808,6 +16808,9 @@ body { letter-spacing: 0.01em; }
 .header { backdrop-filter: blur(8px); background: rgba(15, 23, 42, 0.88); }
 .letter-spacing { letter-spacing: .12em; }
 .elevare-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,.88) 0%, rgba(15,23,42,.45) 60%, rgba(15,23,42,.2) 100%); z-index: 0; }
+.elevare-hero .container { padding-top: clamp(6rem, 9vh, 8rem); padding-bottom: 2rem; }
+.elevare-hero h1 { font-size: clamp(2rem, 4.8vw, 3.75rem); line-height: 1.15; max-width: 16ch; }
+.elevare-hero p.fs-5 { font-size: clamp(1rem, 2vw, 1.25rem) !important; max-width: 60ch; }
 .elevare-service-card { border: 1px solid rgba(15,23,42,.08); border-radius: 16px; transition: transform .3s ease, box-shadow .3s ease; }
 .elevare-service-card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(15,23,42,.12); }
 .elevare-cta { background: #0F172A; }
