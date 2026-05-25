@@ -16815,3 +16815,60 @@ body { letter-spacing: 0.01em; }
 .elevare-service-card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(15,23,42,.12); }
 .elevare-cta { background: #0F172A; }
 .btn-outline-light:hover { background: #CBA35C; border-color: #CBA35C !important; color: #0F172A !important; }
+
+/* Elevare pricing plans */
+.pricing-plan-card {
+  border-radius: 18px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.pricing-plan-card .pricing-plan-title {
+  letter-spacing: -0.02em;
+}
+
+.pricing-plan-subtitle {
+  font-size: 1.05rem;
+  color: rgba(31, 42, 46, 0.75);
+}
+
+.pricing-feature-list li iconify-icon {
+  font-size: 1.2rem;
+}
+
+.pricing-best-for {
+  border-top: 1px solid rgba(31, 42, 46, 0.12);
+  padding-top: 1rem;
+}
+
+.pricing-addon-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F2A2E;
+}
+
+.pricing-plan-card-popular {
+  background: linear-gradient(145deg, #1F2A2E 0%, #2f4148 100%);
+}
+
+.pricing-popular-badge {
+  background-color: #f4f6f8;
+  color: #1F2A2E;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.pricing-plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 2rem rgba(17, 24, 39, 0.14) !important;
+}
+
+@media (max-width: 767.98px) {
+  .pricing-plan-subtitle {
+    font-size: 1rem;
+  }
+
+  .pricing-addon-price {
+    font-size: 1.35rem;
+  }
+}
