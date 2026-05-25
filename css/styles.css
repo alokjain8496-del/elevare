@@ -16813,5 +16813,16 @@ body { letter-spacing: 0.01em; }
 .elevare-hero p.fs-5 { font-size: clamp(1rem, 2vw, 1.25rem) !important; max-width: 60ch; }
 .elevare-service-card { border: 1px solid rgba(15,23,42,.08); border-radius: 16px; transition: transform .3s ease, box-shadow .3s ease; }
 .elevare-service-card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(15,23,42,.12); }
+.pricing-plan-card { border: 1px solid rgba(15,23,42,.08); border-radius: 16px; transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; overflow: hidden; }
+.pricing-plan-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(15,23,42,.12); border-color: rgba(203,163,92,.4); }
+.pricing-plan-price { font-size: clamp(2rem, 3.2vw, 2.4rem); font-weight: 700; line-height: 1.1; color: #0F172A; }
+.pricing-plan-price span { font-size: .95rem; color: rgba(15,23,42,.65); font-weight: 600; margin-left: .15rem; }
+.pricing-note { font-size: .95rem; color: rgba(15,23,42,.72); }
+.best-for-box { border-top: 1px solid rgba(15,23,42,.1); padding-top: 1rem; margin-top: auto; color: rgba(15,23,42,.8); }
+.pricing-plan-card-premium { background: linear-gradient(165deg, #0F172A 0%, #1E293B 58%, #334155 100%); color: #fff; box-shadow: 0 16px 36px rgba(15,23,42,.25), 0 0 0 1px rgba(203,163,92,.35); position: relative; }
+.pricing-plan-card-premium::before { content: ""; position: absolute; inset: -40% -20% auto; height: 220px; background: radial-gradient(circle, rgba(203,163,92,.35) 0%, rgba(203,163,92,0) 70%); pointer-events: none; }
+.pricing-plan-card-premium .pricing-plan-price, .pricing-plan-card-premium .pricing-plan-price span, .pricing-plan-card-premium .pricing-note, .pricing-plan-card-premium .best-for-box { color: rgba(255,255,255,.9); }
+.pricing-plan-card-premium .best-for-box { border-top-color: rgba(255,255,255,.24); }
+.pricing-popular-badge { background: #CBA35C; color: #0F172A; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
 .elevare-cta { background: #0F172A; }
 .btn-outline-light:hover { background: #CBA35C; border-color: #CBA35C !important; color: #0F172A !important; }
