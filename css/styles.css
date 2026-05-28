@@ -16841,6 +16841,9 @@ body { letter-spacing: 0.01em; }
   object-fit: cover;
   transition: transform 0.45s ease;
 }
+.featured-project-card .card-body {
+  min-height: 152px;
+}
 .featured-project-card:hover {
   color: var(--bs-dark);
   transform: translateY(-8px);
@@ -16884,6 +16887,7 @@ body { letter-spacing: 0.01em; }
 }
 
 .portfolio-luxury-card {
+  scroll-margin-top: 120px;
   border: 1px solid rgba(193, 255, 114, 0.22);
   border-radius: 30px;
   overflow: hidden;
