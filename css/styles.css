@@ -16841,6 +16841,17 @@ body { letter-spacing: 0.01em; }
   object-fit: cover;
   transition: transform 0.45s ease;
 }
+.iguide-embed {
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+.iguide-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
 .featured-project-card .card-body {
   min-height: 152px;
 }
