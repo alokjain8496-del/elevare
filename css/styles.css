@@ -17015,3 +17015,21 @@ body { letter-spacing: 0.01em; }
     justify-content: center;
   }
 }
+
+/* Keep content-led sections compact even when legacy spacing utilities are present. */
+.footer {
+  min-height: auto;
+  height: auto;
+  padding: 60px 0 30px !important;
+}
+
+.stats-facts {
+  min-height: auto;
+  height: auto;
+  padding: 40px 0 !important;
+}
+@media (max-width: 767.98px) {
+  .stats-facts {
+    padding: 32px 0 !important;
+  }
+}
