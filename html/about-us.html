@@ -12,44 +12,43 @@
 </head>
 
 <body>
-
   <!-- Header -->
-  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+  <header class="header position-fixed start-0 top-0 w-100">
     <div class="container">
-      <div class="header-wrapper d-flex align-items-center justify-content-between">
+      <div class="header-wrapper">
         <div class="logo">
-          <a href="index.html" class="logo-white">
-            <img src="../images/logos/logo.webp" alt="Elevare Studio logo" class="img-fluid">
-          </a>
-          <a href="index.html" class="logo-dark">
+          <a href="index.html" aria-label="Elevare Studio home">
             <img src="../images/logos/logo.webp" alt="Elevare Studio logo" class="img-fluid">
           </a>
         </div>
-        <div class="btn-group">
-          <button
-            class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
-            type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-            <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end p-4">
-            <div class="d-flex flex-column gap-6">
-              <div class="hstack justify-content-between border-bottom pb-6">
-                <p class="mb-0 fs-5 text-dark">Menu</p>
-                <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
-              </div>
-              <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
-                <li class="header-item"><a href="index.html#services" class="header-link hstack gap-2 fs-7 fw-bold text-dark">Services</a></li>
-                <li class="header-item"><a href="index.html#portfolio" class="header-link hstack gap-2 fs-7 fw-bold text-dark">Portfolio</a></li>
-                <li class="header-item"><a href="index.html#pricing" class="header-link hstack gap-2 fs-7 fw-bold text-dark">Pricing</a></li>
-                <li class="header-item"><a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark">About Us</a></li>
-                <li class="header-item"><a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark">Contact</a></li>
-              </ul>
-              <div>
-                <a class="text-dark" href="tel:+18258831177">+1(825)883-1177</a>
-                <a class="fs-8 text-dark fw-bold d-block" href="mailto:info@elevares.ca">info@elevares.ca</a>
-              </div>
-            </div>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <ul class="header-menu list-unstyled mb-0">
+            <li class="header-item"><a href="index.html#services" class="header-link">Services</a></li>
+            <li class="header-item"><a href="contact.html" class="header-link">Contact us</a></li>
           </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="contact.html#get-in-touch" class="btn nav-cta d-none d-lg-inline-flex">Get a Quote</a>
+          <div class="btn-group mobile-nav-toggle">
+            <button
+              class="btn toggle-menu round-45 p-2 d-flex align-items-center justify-content-center rounded-circle"
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" aria-label="Open navigation menu">
+              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8"></iconify-icon>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end mobile-nav-menu p-4">
+              <li class="d-flex flex-column gap-4">
+                <div class="hstack justify-content-between border-bottom pb-4">
+                  <p class="mb-0 fs-5 fw-bold">Menu</p>
+                  <button type="button" class="btn-close btn-close-white opacity-75" aria-label="Close"></button>
+                </div>
+                <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                  <li class="header-item"><a href="index.html#services" class="header-link">Services</a></li>
+                  <li class="header-item"><a href="contact.html" class="header-link">Contact us</a></li>
+                </ul>
+                <a href="contact.html#get-in-touch" class="btn nav-cta w-100 justify-content-center">Get a Quote</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

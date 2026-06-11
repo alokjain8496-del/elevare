@@ -51,6 +51,41 @@ $(function () {
 	});
 
 
+    // Smooth in-page navigation with sticky header offset
+    $('a[href^="#"]').on("click", function (event) {
+        const target = $(this.getAttribute("href"));
+
+        if (target.length) {
+            event.preventDefault();
+
+            const headerHeight = $(".header").outerHeight() || 0;
+            const targetTop = target.offset().top - headerHeight - 16;
+
+            $("html, body").animate({
+                scrollTop: targetTop
+            }, 650);
+
+            const dropdownToggle = $(this).closest(".btn-group").find("[data-bs-toggle='dropdown']")[0];
+            const dropdownInstance = dropdownToggle ? bootstrap.Dropdown.getOrCreateInstance(dropdownToggle) : null;
+
+            if (dropdownInstance) {
+                dropdownInstance.hide();
+            }
+        }
+    });
+
+
+    // Mobile menu close button
+    $(".mobile-nav-menu .btn-close").on("click", function () {
+        const dropdownToggle = $(this).closest(".btn-group").find("[data-bs-toggle='dropdown']")[0];
+        const dropdownInstance = dropdownToggle ? bootstrap.Dropdown.getOrCreateInstance(dropdownToggle) : null;
+
+        if (dropdownInstance) {
+            dropdownInstance.hide();
+        }
+    });
+
+
     // ScrollToTop
     function scrollToTop() {
         window.scrollTo({
@@ -60,10 +95,18 @@ $(function () {
     }
 
     const btn = document.getElementById("scrollToTopBtn");
-    btn.addEventListener("click", scrollToTop);
+
+    if (btn) {
+        btn.addEventListener("click", scrollToTop);
+    }
 
     window.onscroll = function () {
         const btn = document.getElementById("scrollToTopBtn");
+
+        if (!btn) {
+            return;
+        }
+
         if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
             btn.style.display = "flex";
         } else {
