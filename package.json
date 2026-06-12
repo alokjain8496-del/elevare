@@ -1,0 +1,9 @@
+{
+  "name": "elevare-seo-static-site",
+  "private": true,
+  "scripts": {
+    "build": "npm run optimize:assets && npm run generate:sitemap",
+    "generate:sitemap": "node scripts/generate-sitemap.js",
+    "optimize:assets": "node scripts/optimize-assets.js"
+  }
+}
