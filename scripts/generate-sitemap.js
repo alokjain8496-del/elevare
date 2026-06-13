@@ -22,6 +22,7 @@ function walk(dir) {
 
 function routeFor(file) {
   if (file === 'index.html' || file === 'html/index.html') return '/';
+  if (!file.includes('/') && file.endsWith('.html')) return `/${file.replace(/\.html$/, '')}`;
   return `/${file}`;
 }
 
