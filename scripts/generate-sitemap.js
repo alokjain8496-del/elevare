@@ -5,7 +5,7 @@ const path = require('path');
 const SITE_URL = 'https://elevares.ca';
 const ROOT = process.cwd();
 const OUTPUTS = [path.join(ROOT, 'sitemap.xml'), path.join(ROOT, 'public', 'sitemap.xml')];
-const EXCLUDE = new Set(['html/404.html', 'html/sign-in.html', 'html/sign-up.html', 'html/projects.html', 'html/projects-detail.html', 'about-us.html', 'contact.html', 'thank-you.html']);
+const EXCLUDE = new Set(['html/404.html', 'html/sign-in.html', 'html/sign-up.html', 'html/projects.html', 'about-us.html', 'contact.html', 'thank-you.html']);
 
 function walk(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
