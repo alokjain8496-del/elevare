@@ -16,29 +16,77 @@
   <link rel="stylesheet" href="../libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../libs/aos-master/dist/aos.css">
   <link rel="stylesheet" href="../css/styles.min.css" />
-  <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Elevares",
+  "image": "https://elevares.ca/assets/logo.png",
+  "@id": "https://elevares.ca/#organization",
+  "url": "https://elevares.ca",
+  "telephone": "YOUR_PHONE_NUMBER_HERE",
+  "email": "YOUR_EMAIL_HERE",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Calgary",
+    "addressRegion": "AB",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.0447,
+    "longitude": -114.0719
+  },
+  "areaServed": [
     {
-      "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "ProfessionalService"],
-      "name": "ELEVARES",
-      "url": "https://elevares.ca/",
-      "image": "https://elevares.ca/images/logos/logo.webp",
-      "description": "Calgary real estate media services including 360 virtual tours, RMS measurements, floor plans, listing photography, and virtual staging.",
-      "email": "info@elevares.ca",
-      "telephone": "+1-825-883-1177",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Calgary",
-        "addressRegion": "AB",
-        "addressCountry": "CA"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Calgary, Alberta"
-      },
-      "serviceType": "Professional real estate media"
+      "@type": "AdministrativeArea",
+      "name": "Calgary"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Airdrie"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Cochrane"
     }
-  </script>
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Spatial Capture & Measurement Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "iGuide 360 Virtual Tours & Scans",
+          "description": "Immersive 360-degree virtual walkthroughs and property scans powered by iGuide technology for commercial spaces, builders, and premium real estate listings.",
+          "areaServed": "Calgary and surrounding areas"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "RMS Compliant Floor Plans & Measurements",
+          "description": "Laser-accurate residential and commercial building measurements fully compliant with RECA's Residential Measurement Standard (RMS) in Alberta.",
+          "areaServed": "Calgary and surrounding areas"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pre-Drywall & Construction Documentation Scans",
+          "description": "As-built 360-degree construction site scanning and spatial capture tailored for builders, renovators, and remote project management validation.",
+          "areaServed": "Calgary and surrounding areas"
+        }
+      }
+    ]
+  }
+}
+</script>
 </head>
 
 <body>
