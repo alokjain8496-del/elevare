@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elevares.ca/sitemap.xml
+Sitemap: https://www.elevares.ca/sitemap.xml
