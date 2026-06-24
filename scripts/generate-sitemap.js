@@ -5,55 +5,30 @@ const path = require('path');
 const SITE_URL = 'https://www.elevares.ca';
 const ROOT = process.cwd();
 const OUTPUTS = [path.join(ROOT, 'sitemap.xml'), path.join(ROOT, 'public', 'sitemap.xml')];
-const EXCLUDE = new Set(['html/404.html', 'html/sign-in.html', 'html/sign-up.html', 'about-us.html', 'contact.html', 'thank-you.html']);
 
-function walk(dir) {
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
-  return entries.flatMap((entry) => {
-    const fullPath = path.join(dir, entry.name);
-    const rel = path.relative(ROOT, fullPath).replace(/\\/g, '/');
-    if (entry.isDirectory()) {
-      if (['.git', 'node_modules', 'libs', 'public'].includes(entry.name)) return [];
-      return walk(fullPath);
-    }
-    return entry.isFile() && entry.name.endsWith('.html') ? [rel] : [];
-  });
-}
-
-function routeFor(file) {
-  if (file === 'index.html' || file === 'html/index.html') return '/';
-  if (!file.includes('/') && file.endsWith('.html')) return `/${file.replace(/\.html$/, '')}`;
-  return `/${file.replace(/\.html$/, '')}`;
-}
-
-function priorityFor(route) {
-  if (route === '/') return '1.0';
-  if (route.includes('contact') || route.includes('about')) return '0.8';
-  if (route.includes('project')) return '0.7';
-  return '0.5';
-}
-
-function changefreqFor(route) {
-  if (route === '/' || route.includes('project')) return 'monthly';
-  return 'yearly';
-}
-
-const routes = [...new Set(walk(ROOT)
-  .filter((file) => !EXCLUDE.has(file))
-  .map(routeFor))]
-  .sort((a, b) => (a === '/' ? -1 : b === '/' ? 1 : a.localeCompare(b)));
+// Include only final, indexable, live 200-status routes. Do not include redirecting routes, duplicate page copies, or temporary pages.
+const ROUTES = [
+  { route: '/', changefreq: 'weekly', priority: '1.0' },
+  { route: '/rms-measurement-calgary', changefreq: 'monthly', priority: '0.9' },
+  { route: '/blog', changefreq: 'weekly', priority: '0.8' },
+  { route: '/blog/rms-measurement-calgary-real-estate-listings', changefreq: 'monthly', priority: '0.8' },
+  { route: '/html/about-us', changefreq: 'yearly', priority: '0.6' },
+  { route: '/html/contact', changefreq: 'yearly', priority: '0.6' },
+  { route: '/html/privacy-policy', changefreq: 'yearly', priority: '0.3' },
+  { route: '/html/terms-and-conditions', changefreq: 'yearly', priority: '0.3' },
+];
 
 const lastmod = new Date().toISOString().slice(0, 10);
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  routes.map((route) => `  <url>\n` +
+  ROUTES.map(({ route, changefreq, priority }) => `  <url>\n` +
     `    <loc>${SITE_URL}${route === '/' ? '/' : route}</loc>\n` +
     `    <lastmod>${lastmod}</lastmod>\n` +
-    `    <changefreq>${changefreqFor(route)}</changefreq>\n` +
-    `    <priority>${priorityFor(route)}</priority>\n` +
+    `    <changefreq>${changefreq}</changefreq>\n` +
+    `    <priority>${priority}</priority>\n` +
     `  </url>`).join('\n') +
   `\n</urlset>\n`;
 
 fs.mkdirSync(path.join(ROOT, 'public'), { recursive: true });
 for (const output of OUTPUTS) fs.writeFileSync(output, xml);
-console.log(`Generated ${routes.length} sitemap route(s): ${OUTPUTS.map((o) => path.relative(ROOT, o)).join(', ')}`);
+console.log(`Generated ${ROUTES.length} sitemap route(s): ${OUTPUTS.map((o) => path.relative(ROOT, o)).join(', ')}`);
