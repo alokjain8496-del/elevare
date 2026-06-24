@@ -1,39 +1,51 @@
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://www.elevares.ca/html</loc>
-<lastmod>2026-06-16T07:30:53+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://www.elevares.ca/</loc>
-<lastmod>2026-06-16T07:30:54+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.elevares.ca/html/about-us</loc>
-<lastmod>2026-06-16T07:30:54+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.elevares.ca/html/contact</loc>
-<lastmod>2026-06-16T07:30:54+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.elevares.ca/rms-measurement-calgary</loc>
-<lastmod>2026-06-16T07:30:54+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.elevares.ca/html/privacy-policy</loc>
-<lastmod>2026-06-16T07:30:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.elevares.ca/html/terms-and-conditions</loc>
-<lastmod>2026-06-16T07:30:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://elevares.ca/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elevares.ca/blog</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://elevares.ca/blog/rms-measurement-calgary-real-estate-listings</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://elevares.ca/html/about-us</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elevares.ca/html/contact</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elevares.ca/html/privacy-policy</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://elevares.ca/html/terms-and-conditions</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://elevares.ca/rms-measurement-calgary</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
