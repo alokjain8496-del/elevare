@@ -17269,3 +17269,47 @@ body { letter-spacing: 0.01em; }
     font-size: 38px;
   }
 }
+
+/* Service page and related service refinements */
+.related-service-card,
+.elevare-service-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.related-service-card .elevare-service-card,
+.services .elevare-service-card {
+  border: 1px solid var(--bs-border-color);
+  min-height: 100%;
+}
+.related-service-card:hover .elevare-service-card,
+.services a:hover .elevare-service-card {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.12) !important;
+  border-color: var(--bs-primary);
+}
+.related-service-card:focus-visible,
+.services a:focus-visible,
+.footer a:focus-visible,
+.header a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--bs-primary);
+  outline-offset: 4px;
+}
+.related-service-card iconify-icon,
+.services .elevare-service-card iconify-icon {
+  display: inline-block;
+  min-height: 48px;
+}
+.project-card-media {
+  aspect-ratio: 16 / 10;
+  background: var(--bs-light-gray);
+}
+.project-card-media iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.blog-page-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
