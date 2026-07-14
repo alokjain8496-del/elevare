@@ -3,27 +3,126 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "redirects": [
-    { "source": "/html/sign-in", "destination": "/", "permanent": true },
-    { "source": "/html/sign-in.html", "destination": "/", "permanent": true },
-    { "source": "/html/sign-up", "destination": "/", "permanent": true },
-    { "source": "/html/sign-up.html", "destination": "/", "permanent": true },
-    { "source": "/sign-in", "destination": "/", "permanent": true },
-    { "source": "/sign-in.html", "destination": "/", "permanent": true },
-    { "source": "/sign-up", "destination": "/", "permanent": true },
-    { "source": "/sign-up.html", "destination": "/", "permanent": true },
-    { "source": "/projects", "destination": "/#portfolio", "permanent": true },
-    { "source": "/projects.html", "destination": "/#portfolio", "permanent": true },
-    { "source": "/html/projects", "destination": "/#portfolio", "permanent": true },
-    { "source": "/html/projects.html", "destination": "/#portfolio", "permanent": true },
-    { "source": "/360-virtual-tour-calgary", "destination": "/#services", "permanent": true },
-    { "source": "/privacy-policy", "destination": "/html/privacy-policy", "permanent": true },
-    { "source": "/privacy-policy.html", "destination": "/html/privacy-policy", "permanent": true },
-    { "source": "/terms-and-conditions", "destination": "/html/terms-and-conditions", "permanent": true },
-    { "source": "/terms-and-conditions.html", "destination": "/html/terms-and-conditions", "permanent": true },
-    { "source": "/about-us", "destination": "/html/about-us", "permanent": true },
-    { "source": "/about-us.html", "destination": "/html/about-us", "permanent": true },
-    { "source": "/contact", "destination": "/html/contact", "permanent": true },
-    { "source": "/contact.html", "destination": "/html/contact", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true }
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "elevares.ca"
+        }
+      ],
+      "destination": "https://www.elevares.ca/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/html/sign-in",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/html/sign-in.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/html/sign-up",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/html/sign-up.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sign-in",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sign-in.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sign-up",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sign-up.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/projects",
+      "destination": "/#portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/projects.html",
+      "destination": "/#portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/html/projects",
+      "destination": "/#portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/html/projects.html",
+      "destination": "/#portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/html/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/html/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/html/terms-and-conditions",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions.html",
+      "destination": "/html/terms-and-conditions",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/html/about-us",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/html/about-us.html",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/html/contact",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/html/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/360-virtual-tour-calgary",
+      "destination": "/360-virtual-tours-calgary",
+      "permanent": true
+    }
   ]
 }
