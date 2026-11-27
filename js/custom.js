@@ -432,6 +432,55 @@ $(function () {
     prefillContactFormFromQuery();
 
 
+    // Editorial Category Filters (Blog & Portfolio Pages)
+    function initEditorialFilters() {
+        var filterRoots = document.querySelectorAll('[data-editorial-filter-root]');
+        filterRoots.forEach(function (root) {
+            var pills = Array.prototype.slice.call(root.querySelectorAll('[data-editorial-filter]'));
+            var items = Array.prototype.slice.call(root.querySelectorAll('[data-editorial-item]'));
+            var statusEl = root.querySelector('[data-editorial-status]');
+
+            pills.forEach(function (pill) {
+                pill.addEventListener('click', function () {
+                    var targetCat = pill.getAttribute('data-editorial-filter') || 'all';
+                    pills.forEach(function (p) {
+                        var active = p === pill;
+                        p.classList.toggle('is-active', active);
+                        p.setAttribute('aria-pressed', active ? 'true' : 'false');
+                    });
+
+                    var visibleCount = 0;
+                    items.forEach(function (item) {
+                        var cats = (item.getAttribute('data-editorial-category') || '').split(' ');
+                        var matches = targetCat === 'all' || cats.indexOf(targetCat) !== -1;
+                        item.hidden = !matches;
+                        if (matches) {
+                            visibleCount += 1;
+                        }
+                    });
+
+                    var sections = Array.prototype.slice.call(root.querySelectorAll('[data-editorial-section]'));
+                    sections.forEach(function (sec) {
+                        var secItems = Array.prototype.slice.call(sec.querySelectorAll('[data-editorial-item]'));
+                        var anyVisible = secItems.some(function (el) {
+                            return !el.hidden;
+                        });
+                        sec.hidden = !anyVisible;
+                    });
+
+                    if (statusEl) {
+                        var singular = statusEl.getAttribute('data-singular') || 'item';
+                        var plural = statusEl.getAttribute('data-plural') || 'items';
+                        statusEl.textContent = 'Showing ' + visibleCount + ' ' + (visibleCount === 1 ? singular : plural);
+                    }
+                });
+            });
+        });
+    }
+
+    initEditorialFilters();
+
+
     // ScrollToTop
     function scrollToTop() {
         window.scrollTo({
