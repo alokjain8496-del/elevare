@@ -4,7 +4,6 @@
 
 ## Company Overview
 - **Business Name**: Elevares Studio (Elevare Studio)
-- **Primary Contact**: Aalok Jain
 - **Location**: 206 Elgin View SE, Calgary, AB T2Z 4N3, Canada
 - **Service Area**: Calgary, Olds, Airdrie, Cochrane, Okotoks, Chestermere, and surrounding Southern/Central Alberta
 - **Phone**: +1 (825) 883-1177
@@ -40,4 +39,4 @@
 - [About Elevares Studio](https://www.elevares.ca/about-us): Our team, builder partnerships, and service standards across Calgary and Alberta.
 - [Blog & Resources](https://www.elevares.ca/blog): Guides on RMS measurement compliance, pre-drywall documentation, and listing media.
 - [RMS Measurement Guide for Calgary Listings](https://www.elevares.ca/blog/rms-measurement-calgary-real-estate-listings): In-depth guide on Alberta RMS measurement rules and accuracy.
-- [Contact & Book a Shoot](https://www.elevares.ca/contact): Schedule a pre-drywall construction scan, RMS measurement, or listing shoot with Aalok Jain.
+- [Contact & Book a Shoot](https://www.elevares.ca/contact): Schedule a pre-drywall construction scan, RMS measurement, or listing shoot with Elevares Studio.

@@ -13,11 +13,21 @@ function minifyCss(css) {
 }
 
 function minifyJs(js) {
-  return js
+  const strings = [];
+  const placeholder = (index) => `__ELEVARE_STR_${index}__`;
+  const protectedJs = js
     .replace(/\/\*[\s\S]*?\*\//g, '')
     .replace(/^\s*\/\/.*$/gm, '')
+    .replace(/(["'])(?:\\.|(?!\1)[^\\\r\n])*\1/g, (match) => {
+      const idx = strings.length;
+      strings.push(match);
+      return placeholder(idx);
+    });
+
+  return protectedJs
     .replace(/\s+/g, ' ')
     .replace(/\s*([{}();,:])\s*/g, '$1')
+    .replace(/__ELEVARE_STR_(\d+)__/g, (_, idx) => strings[Number(idx)])
     .trim();
 }
 

@@ -277,6 +277,161 @@ $(function () {
     initFeaturedProjectsCarousels();
 
 
+    // Interactive Filterable FAQ Accordion
+    function initFaqAccordion() {
+        var faqRoots = document.querySelectorAll('[data-faq-root]');
+        faqRoots.forEach(function (root) {
+            var tabs = Array.prototype.slice.call(root.querySelectorAll('[data-faq-filter]'));
+            var cards = Array.prototype.slice.call(root.querySelectorAll('[data-faq-item]'));
+
+            function setCardOpen(card, isOpen) {
+                var trigger = card.querySelector('[data-faq-trigger]');
+                var icon = card.querySelector('[data-faq-icon]');
+                card.classList.toggle('is-open', isOpen);
+                if (trigger) {
+                    trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                }
+                if (icon) {
+                    icon.textContent = isOpen ? '−' : '+';
+                }
+            }
+
+            cards.forEach(function (card) {
+                var trigger = card.querySelector('[data-faq-trigger]');
+                if (!trigger) {
+                    return;
+                }
+                trigger.addEventListener('click', function () {
+                    var currentlyOpen = card.classList.contains('is-open');
+                    setCardOpen(card, !currentlyOpen);
+                });
+            });
+
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    var filter = tab.getAttribute('data-faq-filter') || 'all';
+                    tabs.forEach(function (t) {
+                        var active = t === tab;
+                        t.classList.toggle('is-active', active);
+                        t.setAttribute('aria-selected', active ? 'true' : 'false');
+                    });
+
+                    var firstVisible = null;
+                    cards.forEach(function (card) {
+                        var cat = card.getAttribute('data-faq-category') || 'all';
+                        var matches = filter === 'all' || cat === filter;
+                        card.hidden = !matches;
+                        if (matches && !firstVisible) {
+                            firstVisible = card;
+                        }
+                        if (!matches) {
+                            setCardOpen(card, false);
+                        }
+                    });
+
+                    var anyOpenVisible = cards.some(function (card) {
+                        return !card.hidden && card.classList.contains('is-open');
+                    });
+                    if (!anyOpenVisible && firstVisible) {
+                        setCardOpen(firstVisible, true);
+                    }
+                });
+            });
+        });
+    }
+
+    initFaqAccordion();
+
+
+    // Split Booking Card Interactive Pill Selectors + Contact Form Pre-fill
+    function initConversionBookingCard() {
+        var bookingCards = document.querySelectorAll('[data-booking-card]');
+        bookingCards.forEach(function (card) {
+            var rolePills = Array.prototype.slice.call(card.querySelectorAll('[data-role-pill]'));
+            var servicePills = Array.prototype.slice.call(card.querySelectorAll('[data-service-pill]'));
+            var ctaLink = card.querySelector('[data-booking-cta]');
+
+            function updateCtaHref() {
+                if (!ctaLink) {
+                    return;
+                }
+                var selectedRole = '';
+                rolePills.forEach(function (pill) {
+                    if (pill.classList.contains('is-selected')) {
+                        selectedRole = pill.getAttribute('data-role-pill') || '';
+                    }
+                });
+                var selectedServices = [];
+                servicePills.forEach(function (pill) {
+                    if (pill.classList.contains('is-selected')) {
+                        var val = pill.getAttribute('data-service-pill');
+                        if (val) {
+                            selectedServices.push(val);
+                        }
+                    }
+                });
+                var params = [];
+                if (selectedRole) {
+                    params.push('role=' + encodeURIComponent(selectedRole));
+                }
+                if (selectedServices.length > 0) {
+                    params.push('services=' + encodeURIComponent(selectedServices.join(', ')));
+                }
+                ctaLink.setAttribute('href', params.length > 0 ? '/contact?' + params.join('&') : '/contact');
+            }
+
+            rolePills.forEach(function (pill) {
+                pill.addEventListener('click', function () {
+                    rolePills.forEach(function (p) {
+                        var active = p === pill;
+                        p.classList.toggle('is-selected', active);
+                        p.setAttribute('aria-pressed', active ? 'true' : 'false');
+                    });
+                    updateCtaHref();
+                });
+            });
+
+            servicePills.forEach(function (pill) {
+                pill.addEventListener('click', function () {
+                    var next = !pill.classList.contains('is-selected');
+                    pill.classList.toggle('is-selected', next);
+                    pill.setAttribute('aria-pressed', next ? 'true' : 'false');
+                    updateCtaHref();
+                });
+            });
+
+            updateCtaHref();
+        });
+    }
+
+    function prefillContactFormFromQuery() {
+        var messageField = document.getElementById('exampleFormControlTextarea1');
+        if (!messageField || !window.location.search) {
+            return;
+        }
+        var params = new window.URLSearchParams(window.location.search);
+        var role = params.get('role');
+        var services = params.get('services');
+        if (!role && !services) {
+            return;
+        }
+        var lines = [];
+        if (role) {
+            lines.push('Role: ' + role);
+        }
+        if (services) {
+            lines.push('Services Requested: ' + services);
+        }
+        lines.push('Property Address & Preferred Date: ');
+        if (!messageField.value) {
+            messageField.value = lines.join('\n');
+        }
+    }
+
+    initConversionBookingCard();
+    prefillContactFormFromQuery();
+
+
     // ScrollToTop
     function scrollToTop() {
         window.scrollTo({
