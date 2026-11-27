@@ -1,0 +1,19 @@
+{
+  "name": "Elevare Studio | Calgary Real Estate Media",
+  "short_name": "Elevare Studio",
+  "icons": [
+    {
+      "src": "/images/logos/elevare-studio-favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logos/elevare-studio-favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0F172A",
+  "background_color": "#0F172A",
+  "display": "standalone"
+}
