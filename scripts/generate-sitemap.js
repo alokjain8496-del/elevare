@@ -7,23 +7,25 @@ const ROOT = process.cwd();
 const OUTPUTS = [path.join(ROOT, 'sitemap.xml'), path.join(ROOT, 'public', 'sitemap.xml')];
 const ROUTES = [
   '/',
-  '/about-us',
+  '/services',
+  '/services/real-estate-photography-calgary',
+  '/services/rms-measurement-calgary',
+  '/services/360-virtual-tours-calgary',
+  '/services/real-estate-floor-plans-calgary',
+  '/services/virtual-staging-calgary',
   '/portfolio',
-  '/contact',
   '/blog',
-  '/rms-measurement-calgary',
-  '/360-virtual-tours-calgary',
-  '/real-estate-floor-plans-calgary',
-  '/virtual-staging-calgary',
   '/blog/rms-measurement-calgary-real-estate-listings',
+  '/about-us',
+  '/contact',
   '/html/privacy-policy',
   '/html/terms-and-conditions',
 ];
 const lastmod = new Date().toISOString().slice(0, 10);
 
 const urls = ROUTES.map((route) => {
-  const changefreq = route === '/' || route === '/blog' ? 'weekly' : 'monthly';
-  const priority = route === '/' ? '1.0' : route.includes('calgary') ? '0.9' : '0.7';
+  const changefreq = route === '/' || route === '/blog' || route === '/services' ? 'weekly' : 'monthly';
+  const priority = route === '/' ? '1.0' : (route === '/services' || route.startsWith('/services/')) ? '0.9' : '0.7';
   return `  <url>\n    <loc>${SITE_URL}${route === '/' ? '/' : route}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
 }).join('\n');
 

@@ -18414,7 +18414,7 @@ body { letter-spacing: 0.01em; }
   padding: 148px 0 68px;
 }
 .editorial-hero-kicker {
-  display: inline-block;
+  display: block;
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -19393,6 +19393,219 @@ body { letter-spacing: 0.01em; }
   .article-mid-cta,
   .article-author-box {
     padding: 22px 20px;
+  }
+}
+
+/* Phase 2: Clickable Service Tiles with Terracotta Read More Link */
+.home-service-link {
+  display: flex;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+.home-service-link:focus-visible {
+  outline: 3px solid var(--elevare-terracotta);
+  outline-offset: 4px;
+  border-radius: 20px;
+}
+.home-service-card {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(29, 41, 57, 0.1);
+  border-radius: 20px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 28px rgba(29, 41, 57, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.home-service-link:hover .home-service-card {
+  transform: translateY(-5px);
+  border-color: rgba(224, 109, 59, 0.55);
+  box-shadow: 0 22px 48px rgba(29, 41, 57, 0.12);
+}
+.home-service-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--elevare-cream);
+  color: var(--elevare-terracotta);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.home-service-link:hover .home-service-icon-wrap {
+  background: var(--elevare-terracotta);
+  color: #ffffff;
+}
+.home-service-title {
+  color: var(--elevare-navy);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  margin-bottom: 12px;
+}
+.home-service-desc {
+  color: rgba(29, 41, 57, 0.76);
+  font-size: 0.95rem;
+  line-height: 1.66;
+  margin-bottom: 22px;
+}
+.home-service-readmore {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(29, 41, 57, 0.08);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--elevare-terracotta);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+.home-service-readmore svg {
+  transition: transform 0.24s ease;
+}
+.home-service-link:hover .home-service-readmore {
+  color: var(--elevare-terracotta-dark);
+}
+.home-service-link:hover .home-service-readmore svg {
+  transform: translateX(5px);
+}
+
+/* Phase 4: 2-Column Split Booking & Company Contact Card */
+.booking-split-card {
+  background: #ffffff;
+  color: var(--elevare-navy);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.28);
+}
+.booking-split-left {
+  background: var(--elevare-cream);
+  padding: 40px 38px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.booking-split-right {
+  background: #ffffff;
+  padding: 40px 38px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.booking-split-card h2,
+.booking-split-card h3 {
+  color: var(--elevare-navy);
+}
+.company-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.company-contact-item {
+  background: #ffffff;
+  border: 1px solid rgba(29, 41, 57, 0.09);
+  border-radius: 14px;
+  padding: 14px 18px;
+}
+.company-contact-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--elevare-terracotta);
+  margin-bottom: 3px;
+}
+.company-contact-val,
+.company-contact-val a {
+  color: var(--elevare-navy);
+  font-size: 0.98rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.company-contact-val a:hover {
+  color: var(--elevare-terracotta);
+}
+.selector-group-label {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(29, 41, 57, 0.65);
+  margin-bottom: 10px;
+}
+.booking-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.booking-selector-pill {
+  border: 1px solid rgba(29, 41, 57, 0.18);
+  background: #ffffff;
+  color: var(--elevare-navy);
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.booking-selector-pill:hover {
+  border-color: var(--elevare-terracotta);
+  color: var(--elevare-terracotta);
+}
+.booking-selector-pill.is-selected {
+  background: var(--elevare-navy);
+  border-color: var(--elevare-navy);
+  color: #ffffff;
+}
+.booking-selector-pill:focus-visible {
+  outline: 3px solid var(--elevare-terracotta);
+  outline-offset: 2px;
+}
+.terracotta-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 28px;
+  border-radius: 999px;
+  background: var(--elevare-terracotta);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border: 1px solid var(--elevare-terracotta);
+  box-shadow: 0 12px 28px rgba(224, 109, 59, 0.3);
+  transition: transform 0.22s ease, background-color 0.22s ease, box-shadow 0.22s ease;
+}
+.terracotta-cta-btn:hover {
+  background: var(--elevare-terracotta-dark);
+  border-color: var(--elevare-terracotta-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(224, 109, 59, 0.38);
+}
+@media (max-width: 991.98px) {
+  .booking-split-left,
+  .booking-split-right {
+    padding: 30px 26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .booking-split-left,
+  .booking-split-right {
+    padding: 24px 20px;
   }
 }
 

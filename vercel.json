@@ -121,8 +121,58 @@
     },
     {
       "source": "/360-virtual-tour-calgary",
-      "destination": "/360-virtual-tours-calgary",
-      "permanent": true
+      "destination": "/services/360-virtual-tours-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/rms-measurement-calgary",
+      "destination": "/services/rms-measurement-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/rms-measurement-calgary.html",
+      "destination": "/services/rms-measurement-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/360-virtual-tours-calgary",
+      "destination": "/services/360-virtual-tours-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/360-virtual-tours-calgary.html",
+      "destination": "/services/360-virtual-tours-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/real-estate-floor-plans-calgary",
+      "destination": "/services/real-estate-floor-plans-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/real-estate-floor-plans-calgary.html",
+      "destination": "/services/real-estate-floor-plans-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/virtual-staging-calgary",
+      "destination": "/services/virtual-staging-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/virtual-staging-calgary.html",
+      "destination": "/services/virtual-staging-calgary",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/index",
+      "destination": "/services",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/index.html",
+      "destination": "/services",
+      "statusCode": 301
     }
   ]
 }

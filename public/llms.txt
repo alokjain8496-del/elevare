@@ -31,12 +31,15 @@
 
 ## Key Site Pages
 - [Home](https://www.elevares.ca/): Overview of Calgary real estate media, pre-drywall builder scans, featured property tours, pricing, and builder FAQs.
-- [Services — RMS Measurement Calgary](https://www.elevares.ca/rms-measurement-calgary): Certified Alberta RMS measurements with 24-hour floor plan delivery.
-- [Services — Calgary 360 Virtual Tours](https://www.elevares.ca/360-virtual-tours-calgary): Immersive iGUIDE 360° walkthroughs and pre-drywall construction scans.
-- [Services — Real Estate Floor Plans Calgary](https://www.elevares.ca/real-estate-floor-plans-calgary): Dimensioned 2D and detailed property floor plans.
-- [Services — Virtual Staging Calgary](https://www.elevares.ca/virtual-staging-calgary): Digital furnishing for vacant and under-construction rooms.
+- [Services — RMS Measurement Calgary](https://www.elevares.ca/services/rms-measurement-calgary): Certified Alberta RMS measurements with 24-hour floor plan delivery.
+- [Services — Calgary 360 Virtual Tours](https://www.elevares.ca/services/360-virtual-tours-calgary): Immersive iGUIDE 360° walkthroughs and pre-drywall construction scans.
+- [Services — Real Estate Floor Plans Calgary](https://www.elevares.ca/services/real-estate-floor-plans-calgary): Dimensioned 2D and detailed property floor plans.
+- [Services — Virtual Staging Calgary](https://www.elevares.ca/services/virtual-staging-calgary): Digital furnishing for vacant and under-construction rooms.
 - [Projects & Portfolio](https://www.elevares.ca/portfolio): Flagship Olds multi-family construction scan case study and interactive Calgary property tours.
 - [About Elevares Studio](https://www.elevares.ca/about-us): Our team, builder partnerships, and service standards across Calgary and Alberta.
 - [Blog & Resources](https://www.elevares.ca/blog): Guides on RMS measurement compliance, pre-drywall documentation, and listing media.
 - [RMS Measurement Guide for Calgary Listings](https://www.elevares.ca/blog/rms-measurement-calgary-real-estate-listings): In-depth guide on Alberta RMS measurement rules and accuracy.
 - [Contact & Book a Shoot](https://www.elevares.ca/contact): Schedule a pre-drywall construction scan, RMS measurement, or listing shoot with Elevares Studio.
+
+- Services Hub: https://www.elevares.ca/services
+- Real Estate Photography Calgary: https://www.elevares.ca/services/real-estate-photography-calgary
