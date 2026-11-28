@@ -1,6 +1,6 @@
 {
-  "name": "Elevare Studio | Calgary Real Estate Media",
-  "short_name": "Elevare Studio",
+  "name": "Elevares Studio | Calgary Real Estate Media",
+  "short_name": "Elevares Studio",
   "icons": [
     {
       "src": "/images/logos/elevare-studio-favicon-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0F172A",
-  "background_color": "#0F172A",
+  "theme_color": "#1D2939",
+  "background_color": "#1D2939",
   "display": "standalone"
 }

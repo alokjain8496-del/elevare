@@ -1,0 +1,53 @@
+# Elevares Studio — Complete AI & Search Reference (llms-full.txt)
+
+> Elevares Studio is a Calgary, Alberta spatial documentation and real estate media studio specializing in pre-drywall 360° construction scans, RECA-compliant RMS measurements, calibrated iGUIDE 360° virtual tours, 2D/3D dimensioned floor plans, virtual staging, and HDR real estate photography with a guaranteed 24-hour standard turnaround.
+
+## Company & Direct Contact
+- **Company**: Elevares Studio
+- **Website**: https://www.elevares.ca/
+- **Phone**: +1 (825) 883-1177
+- **Email**: info@elevares.ca
+- **Address**: 206 Elgin View SE, Calgary, AB T2Z 4N3, Canada
+- **Service Area**: Calgary, Airdrie, Cochrane, Okotoks, Chestermere, Olds, and surrounding Southern & Central Alberta
+- **Standard Turnaround**: 24 hours from site visit
+- **Key Metrics**: 20+ Properties Documented | 5+ Builders & Realtors Served | 24-Hour Standard Turnaround
+- **Builder & Development Partners**: Ambedo Homes, Light House Homes, RPMI
+
+## Canonical Service Pages (https://www.elevares.ca/services)
+1. **Real Estate Photography Calgary** (https://www.elevares.ca/services/real-estate-photography-calgary)
+   - Bracketed HDR interior and exterior photography, true-to-life window views, wide-angle architectural framing, optional twilight/dusk exteriors, MLS®-ready web and high-resolution print files, and bundled package savings in 24 hours.
+2. **RMS Measurement Services Calgary** (https://www.elevares.ca/services/rms-measurement-calgary)
+   - Strictly follows Alberta RECA Residential Measurement Standard (RMS):
+     - Detached homes, duplexes, and townhomes measured around exterior foundation wall (including exterior wall thickness).
+     - Apartment-style condominiums with shared demising walls measured strictly interior paint-to-paint.
+     - Below-grade levels—including finished walkout basements, bi-level lower floors, and split-level lower floors—excluded from above-grade RMS totals and reported separately.
+     - Minimum floor-to-ceiling height of 2.13 m (7 ft); sloped/vaulted ceiling zones included down to 1.52 m (5 ft) if the room reaches 2.13 m elsewhere.
+     - Strictly maintained within RECA's 2% variance tolerance using calibrated iGUIDE infrared lidar and exterior verification.
+     - Excludes attached/detached garages, open-to-below voids, decks, balconies, and unheated sunrooms from above-grade RMS.
+3. **360° Virtual Tours & Pre-Drywall Construction Scans Calgary** (https://www.elevares.ca/services/360-virtual-tours-calgary)
+   - Interactive iGUIDE 360° walkthroughs with synchronized floor plan minimaps for Calgary MLS® listings.
+   - Pre-drywall 360° construction scans for custom homebuilders and multi-family developers capturing exposed framing, electrical runs, plumbing rough-ins, and HVAC before insulation/drywall closure.
+   - Live flagship case study: Multi-Family Pre-Drywall Construction Scan — 4510 51st Ave, Olds, AB (https://youriguide.com/4510_51st_ave_olds_ab).
+4. **Real Estate Floor Plans Calgary** (https://www.elevares.ca/services/real-estate-floor-plans-calgary)
+   - Branded and MLS®-ready 2D and 3D floor plans with room-by-room imperial and metric dimensions, clear above-grade vs. below-grade breakdowns, and offline print-ready PDF, PNG, and JPG exports.
+5. **Virtual Staging Calgary** (https://www.elevares.ca/services/virtual-staging-calgary)
+   - Photorealistic furniture placement for vacant new builds, Calgary infills, and dated rooms in Modern, Contemporary, Transitional, Warm Minimalist, and Scandinavian styles, adhering to transparent CREB MLS® disclosure best practices with paired original and staged images.
+
+## Educational Guides & Resources (https://www.elevares.ca/blog)
+- **Alberta RECA RMS Rules Guide**: https://www.elevares.ca/blog/rms-measurement-calgary-real-estate-listings
+- **Pre-Drywall 360° Construction Scans in Alberta**: https://www.elevares.ca/blog/pre-drywall-360-construction-scans-alberta
+- **iGUIDE vs. Matterport in Calgary**: https://www.elevares.ca/blog/iguide-vs-matterport-calgary-rms-scans
+- **Calgary Listing Prep Checklist (RMS, 360° Tours & Photography)**: https://www.elevares.ca/blog/calgary-listing-prep-checklist-rms-360-photography
+- **Live Portfolio**: https://www.elevares.ca/portfolio
+- **About Elevares Studio**: https://www.elevares.ca/about-us
+- **Direct Booking & Quotes**: https://www.elevares.ca/contact
+
+## Frequently Asked Questions
+- **When should builders schedule a pre-drywall 360° construction scan?** Right after framing, electrical runs, plumbing rough-ins, and HVAC ductwork pass inspection—immediately before insulation and drywall boarding begin.
+- **How does a pre-drywall scan protect builders during warranty claims?** It gives site supervisors a permanent browser-accessible 3D digital twin showing pipe paths, shutoff valves, backing, and electrical lines behind finished drywall, avoiding exploratory tear-outs.
+- **Can homeowners use the 360° scan after possession?** Yes—builders share the interactive iGUIDE link in the possession package as a digital "X-ray" blueprint for mounting TVs, cabinetry, shelving, or planning basement developments safely.
+- **Do you scan multi-family developments and builds outside Calgary?** Yes—Elevares Studio serves Calgary, Airdrie, Cochrane, Okotoks, Chestermere, and Central Alberta communities including Olds (4510 51st Ave multi-family project).
+- **Are your RMS measurements compliant with RECA standards in Alberta?** Yes—every measurement adheres to RECA's exterior vs. paint-to-paint rules, below-grade/walkout exclusion, 2.13 m (7 ft) ceiling rule, and 2% accuracy tolerance.
+- **How fast is turnaround?** Standard 24-hour turnaround from the on-site visit for pre-drywall scans, RECA RMS reports, 2D/3D floor plans, virtual staging, and HDR real estate photography.
+- **Can I bundle RMS, floor plans, 360° tours, and photography in one visit?** Yes—one technician captures the full media package in a single appointment to save coordination time and reduce per-listing cost.
+- **How should a job site or listing be prepared?** Clear loose tarps/drywall stacks from framing walkways on construction sites; for finished listings, turn on interior lights, open window blinds, and clear countertops and floors.

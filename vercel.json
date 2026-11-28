@@ -173,6 +173,26 @@
       "source": "/services/index.html",
       "destination": "/services",
       "statusCode": 301
+    },
+    {
+      "source": "/html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/html/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/html/index",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/html/index.html",
+      "destination": "/",
+      "statusCode": 301
     }
   ]
 }
